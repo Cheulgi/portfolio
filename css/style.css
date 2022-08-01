@@ -1,0 +1,9 @@
+body{
+    height: 100vh;
+    background: linear-gradient(
+      white 0%
+      white 75%,
+      plum 75%,
+      plum 100%
+    );
+}

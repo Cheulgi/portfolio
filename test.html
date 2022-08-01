@@ -1,53 +1,63 @@
 <!DOCTYPE html>
 <!-- Created By CodingNepal -->
 <html lang="en" dir="ltr">
-   <head>
-      <meta charset="utf-8">
-      <title></title>
-      
-      <link rel="stylesheet" href="css/profileCard.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-      
-   </head>
-   <body>
-      <div class="container">
-         <div class="wrapper">
-            <a href="#">
-            <img src="test.jpg" alt="">
-            </a>
-            <div class="title">
-               Arieonna Hearn
-            </div>
-            <div class="place">
-               Detroit, Michigan
-            </div>
-         </div>
-         <div class="content">
-            <p>
-               Software Engineer and <br>Translator
-            </p>
-            <div class="buttons">
-               <div class="btn">
-                  <button>Message</button>
+
+<head>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <link rel="stylesheet" href="css/profileCard.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+</head>
+
+<body>
+
+
+   <div class="row d-flex justify-content-center">
+      <div>
+         <div class="col-xl-4 col-lg-12">
+            <div class="containers">
+               <div class="wrappers">
+                  <a href="#">
+                     <img src="media/test.jpg" alt="">
+                  </a>
+                  <div class="title">
+                     Arieonna Hearn
+                  </div>
+                  <div class="place">
+                     Detroit, Michigan
+                  </div>
                </div>
-               <div class="btn">
-                  <button>Following</button>
+               <div class="contents">
+                  <p>
+                     Software Engineer and <br>Translator
+                  </p>
+                  <div class="buttons">
+                     <div class="btn">
+                        <button>Message</button>
+                     </div>
+                     <div class="btn">
+                        <button>Following</button>
+                     </div>
+                  </div>
+               </div>
+               <div class="icons">
+                  <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                  <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                  <li><a href="#"><span class="fab fa-instagram"></span></a></li>
                </div>
             </div>
-         </div>
-         <div class="icons">
-            <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-            <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-            <li><a href="#"><span class="fab fa-instagram"></span></a></li>
          </div>
       </div>
-      <script>
-         const img = document.querySelector("img");
-         const icons = document.querySelector(".icons");
-         img.onclick = function(){
-           this.classList.toggle("active");
-           icons.classList.toggle("active");
-         }
-      </script>
-   </body>
+   </div> 
+   <script>
+      const img = document.querySelector("img");
+      const icons = document.querySelector(".icons");
+      img.onclick = function () {
+         this.classList.toggle("active");
+         icons.classList.toggle("active");
+      }
+   </script>
+</body>
+
 </html>
