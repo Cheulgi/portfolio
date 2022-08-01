@@ -7,26 +7,61 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
   <link rel="stylesheet" href="css/hex.css">
+  <link rel="stylesheet" href="css/profileCard.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
   <title></title>
 </head>
 
 <body>
-  <h1> Arieonna Hearn</h1>
-
 
   <!-- hexagon profile picture -->
-
-  <div class="container">
-    <div class="row d-flex justify-content-center">
-      <div class="col-md-6">
+  <!--  
+  <div class="row d-flex justify-content-center">
+    <div>
+      <div class="col-xl-4 col-lg-12">
         <div class='r-hex'>
           <div class='r-hex-inner'></div>
+          <p>test</p>
         </div>
       </div>
     </div>
   </div>
+-->
 
+  <!-- ANIMATED CARD -->
 
+  <div class="container">
+    <div class="wrapper">
+      <a href="#">
+        <img src="test.jpg" alt="">
+      </a>
+      <div class="title">
+        Arieonna Hearn
+      </div>
+      <div class="place">
+        Detroit, Michigan
+      </div>
+    </div>
+    <div class="content">
+      <p>
+        Software Engineer <br> Translator
+      </p>
+      <div class="buttons">
+        <div class="btn">
+          <button>Message</button>
+        </div>
+        <div class="btn">
+          <button>Following</button>
+        </div>
+      </div>
+    </div>
+    <div class="icons">
+      <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+      <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+      <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+    </div>
+  </div>
 
   <button type="button"> <a href="info.html">About me</a> </button>
   <!-- pink bottom half -->
@@ -34,14 +69,14 @@
     <div>
       <div class="col-xl-4 col-lg-12">
         <div class="bottomHalf">
-          
+
         </div>
         <p>test</p>
       </div>
     </div>
   </div>
 
-  
+
   <!-- bootstrap javascript -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -52,6 +87,18 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+
+
+  <!-- ANIMATED CARD  -->
+
+  <script>
+    const img = document.querySelector("img");
+    const icons = document.querySelector(".icons");
+    img.onclick = function () {
+      this.classList.toggle("active");
+      icons.classList.toggle("active");
+    }
+  </script>
 </body>
 
 </html>
