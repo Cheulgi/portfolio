@@ -7,13 +7,6 @@ body{
   padding: 50px;
   text-align: center;
 
-  height: 100vh;
-  background: linear-gradient(
-    white 0%
-    white 75%,
-    plum 75%,
-    plum 100%
-  );
   
 }
 .containers{
@@ -24,6 +17,7 @@ body{
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
   box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.3);
+  
   background: linear-gradient(45deg, #ca4dc0, plum);
 }
 .containers:hover{
