@@ -13,18 +13,19 @@ body{
   align-items: center;
 }
 
-#buttonOne{
-  padding: 200px;
-  position: fixed; bottom: 100px;
-}
+
 
 #buttonTwo{
-  position: fixed; 
-  padding: 20px;
-  bottom: 200px;
-  left: 100 px;
-  float: left;
+  
+  position: fixed;
+width: 500px;
+height: 200px;
+top: 50%;
+left: 50%;
+margin-top: 100px;
+margin-left: -250px;
 }
+
 
 #career{
   color: plum;
