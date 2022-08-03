@@ -28,6 +28,16 @@ margin-left: -250px;
 
 
 #career{
-  color: plum;
+  color: rgb(0, 0, 0);
   border-radius: 1%;
+}
+
+.clickMe a:link { 
+
+  color: black;
+}
+
+.clickMe a:hover { 
+
+  color: plum;
 }
